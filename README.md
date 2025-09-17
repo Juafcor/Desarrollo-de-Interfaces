@@ -80,3 +80,45 @@ Esto es una sección para el ejemplo de enlace interno
 ## Menciones a personas y equipos
 
 @github/juafcor
+
+
+Enlazo una nota al pie [^1]
+
+Enlazo otra nota al pie [^nota]
+
+[^1] Esta es la nota al pie
+
+[^nota] Esta es otra nota al pie
+
+
+| Alineación Izqda. | Alineación Centro | Alineación Dcha. |
+| :--- | :---: | ---: |
+| Dato 1 | Dato 2 | Dato 3 |
+| Dato 4 | Dato 5 | Dato 6 |
+
+<details>
+    <summary>Este es el resumen de la sección desplegable.</summary>
+    Lorem ipsum dolor sit amet consectetur adipiscing elit laoreet nec diam auctor fusce, nunc tortor semper mollis parturient egestas ut mattis arcu odio praesent velit, ante felis vel fames justo lacus potenti nibh mi nulla eu. Netus lacus eu magnis quam magna parturient eget feugiat ultricies, pellentesque mi potenti quisque vitae varius ac justo, euismod aptent in penatibus sed urna fermentum orci. Netus tortor augue consequat pulvinar taciti, justo proin id nisl tincidunt cursus, interdum dignissim gravida vivamus.
+
+</details>
+
+
+<details>
+
+<summary> ¿Cuál es la sintaxis pyhton para imprimir por pantalla?</summary>
+
+```python
+print('texto')
+```
+
+
+    
+</details>
+
+
+```mermaid
+
+
+
+
+```
