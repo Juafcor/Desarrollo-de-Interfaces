@@ -85,19 +85,34 @@ Es una alternativa oficial a PyQt y permite crear ventanas, botones, menús, cua
 ## 7. Código fuente
 
 El código utilizado es el siguiente: 
+Clase ventana:
 ```
-from PySide6.QtWidgets import QApplication , QLabel, QWidget 
+from PySide6.QtWidgets import QWidget, QLabel
 
 class Ventana(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Ventana")
+        self.etiqueta1 = QLabel("Hola mundo!", self)
 
- def __init__(self):
-    super().__init__()
-    self.setWindowTitle("Ventana")
-    self.etiqueta1 = QLabel("Hola mundo!", self)
+```
+Main:
+
+```
+from PySide6.QtWidgets import QApplication
+from ventana import Ventana
+
+class App:
+    def __init__(self):
+        self.app = QApplication([])
+        self.ventana = Ventana()
+
+    def ejecutar(self):
+        self.ventana.show()
+        self.app.exec()
+
 if __name__ == "__main__":
-    app = QApplication([])
-    ventana1 = Ventana()
-    ventana1.show()
-    app.exec() 
+    aplicacion = App()
+    aplicacion.ejecutar()
 
 ```
