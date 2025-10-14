@@ -29,9 +29,8 @@ En este proyecto crearemos nuestra **primera aplicación de escritorio en Python
 
 Verifica la versión de Python instalada:
 
-```bash
+```
 python --version
-
 ```
 
 
@@ -40,7 +39,7 @@ python --version
 
 Comandos a utilizar para la instalación y activación del entorno virtual:
 
-```bash
+```
 
 python -m venv venv
 venv\Scripts\activate
@@ -49,7 +48,7 @@ venv\Scripts\activate
 Al poner venv 2 veces, estamos creando el entorno y dándole un nombre. Si en vez de venv venv ponemos venv miVenv, estaremos creando un entorno llamado miVenv.
 
 Para confirmar el entorno y el intérprete, ponemos: 
-```bash
+```
 where python
 ```
 
@@ -61,6 +60,44 @@ Una vez estemos ya dentro del entorno virtual, queremos utilizar PySide6. Para e
 
 ```
 pip install PySide6
+```
 
+Ahora queremos exportar los requirimientos del entorno virtual para ejecutar el archivo, en este caso las librerías que hemos instalado:
+
+```
+ pip freeze > requirements.txt
+```
+### ¿Qué es PySide6 y por qué queremos usarlo?
+[PySide6](https://doc.qt.io/qtforpython/) es un conjunto de bindings de Qt para Python que permite crear interfaces gráficas de usuario (GUIs) modernas, potentes y multiplataforma.
+Es una alternativa oficial a PyQt y permite crear ventanas, botones, menús, cuadros de texto, etc.
+
+
+## 6. Estructura del proyecto
+ proyecto-hola-mundo/
+ ├─ src/
+ │  ├─ main.py          # punto de entrada
+ │  └─ ventana.py       # clase Ventana
+ ├─ .gitignore
+ ├─ requirements.txt
+ └─ README.md
+
+
+## 7. Código fuente
+
+El código utilizado es el siguiente: 
+```
+from PySide6.QtWidgets import QApplication , QLabel, QWidget 
+
+class Ventana(QWidget):
+
+ def __init__(self):
+    super().__init__()
+    self.setWindowTitle("Ventana")
+    self.etiqueta1 = QLabel("Hola mundo!", self)
+if __name__ == "__main__":
+    app = QApplication([])
+    ventana1 = Ventana()
+    ventana1.show()
+    app.exec() 
 
 ```
