@@ -1,14 +1,14 @@
-# 🖥️ Mi primer “Hola Mundo” con PySide6
+# Mi primer “Hola Mundo” con PySide6
 
-## 📘 Contexto y propósito
-En este proyecto crearás tu **primera aplicación de escritorio en Python** utilizando **PySide6**, el binding oficial de **Qt para Python**.  
-Aprenderás a estructurar una app con **una clase de ventana** separada del **punto de entrada (main.py)**, a gestionar un entorno virtual y a comprender cómo funciona el ciclo de eventos de una aplicación GUI.
+## Contexto y propósito
+En este proyecto crearemos nuestra **primera aplicación de escritorio en Python** utilizando **PySide6**, el binding oficial de **Qt para Python**.  
+Aprenderemos a estructurar una app con **una clase de ventana** separada del **punto de entrada (main.py)**, a gestionar un entorno virtual y a comprender cómo funciona el ciclo de eventos de una aplicación GUI.
 
-🔗 **Repositorio del proyecto:** [https://github.com/tu-usuario/proyecto-hola-mundo](https://github.com/tu-usuario/proyecto-hola-mundo)
+ [**Repositorio del proyecto:**](https://github.com/Juafcor/Desarrollo-de-Interfaces/edit/main/HolaMundoPySide6/)
 
 ---
 
-## 🎯 Objetivos de aprendizaje
+## Objetivos
 
 - Crear y activar un entorno virtual (`venv`) de Python.  
 - Instalar dependencias mediante `pip`.  
@@ -19,7 +19,7 @@ Aprenderás a estructurar una app con **una clase de ventana** separada del **pu
 
 ---
 
-## 🧩 Requisitos previos
+## Requisitos previos
 
 | Recurso | Versión / Recomendación |
 |----------|-------------------------|
@@ -33,3 +33,4 @@ Verifica la versión de Python instalada:
 ```bash
 python --version
 
+```
